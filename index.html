@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SGPA to CGPA Converter</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>SGPA to CGPA Converter</h1>
+
+      <form id="converter-form">
+        <div class="input-group">
+          <label for="sgpa">Enter SGPA:</label>
+          <input
+            type="number"
+            id="sgpa"
+            step="0.01"
+            min="0"
+            max="10"
+            required />
+        </div>
+
+        <div class="input-group">
+          <label for="semesters">Total Number of Semesters:</label>
+
+          <input type="number" id="semesters" min="1" max="10" required />
+        </div>
+        <button type="submit">Calculate CGPA</button>
+      </form>
+
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
